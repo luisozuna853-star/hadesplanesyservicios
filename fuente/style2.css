@@ -525,3 +525,27 @@ table.cmp th .reco{display:inline-block;background:var(--y);color:var(--k);font-
   .card.cat .card-img{height:170px!important}
   .card.cat .card-body h3{font-size:14px}
 }
+/* phone catalog: keep faces in frame, one clean header row */
+@media (max-width:640px){
+  .card.cat .card-img{height:190px!important;background-size:cover!important}
+  .card.cat .card-img.img-newborn{background-position:center 35%!important}
+  .card.cat .card-img.img-primer{background-position:center 25%!important}
+  .card.cat .card-img.img-familiar{background-position:center 8%!important}
+  .card.cat .card-img.img-prebodas{background-position:center 40%!important}
+  .card.cat .card-img.img-parejas{background-position:center 12%!important}
+  .card.cat .card-img.img-individuales{background-position:center 6%!important}
+  .card.cat .card-img.img-graduaciones{background-position:center 6%!important}
+  .card.cat .card-img.img-ejecutivas{background-position:center 4%!important}
+  .card.cat .card-img.img-xv{background-position:center 6%!important}
+  .top{flex-wrap:nowrap!important;padding:10px 14px!important}
+  .logo{font-size:16px!important;white-space:nowrap}
+  .tools .btn{padding:8px 12px!important;font-size:10px!important}
+}
+@media (max-width:640px){
+  .top{gap:8px!important;justify-content:space-between}
+  .logo{font-size:13px!important;letter-spacing:.01em}
+  .tools{gap:8px!important}
+  .tools .btn{padding:7px 10px!important;font-size:9px!important}
+}
+@media (max-width:640px){ .tools{width:auto!important;flex:none!important} }
+@media (max-width:640px){ .card.cat .card-img.img-individuales{background-position:center 62%!important} }
