@@ -26,16 +26,13 @@ tile_cats=[2,4,6,7,8,5]
 tiles=''.join(f'''<a class="tile img-{IMG[ALL[i]['name']]}" href="#planes" data-go="{i}"><span><b>{esc(ALL[i]['name'])}</b></span><small>Ver planes →</small></a>''' for i in tile_cats)
 # session cards
 cards=''.join(f'''
-  <article class="card" data-cat="{i}" data-price="{fprice(c)}">
+  <a class="card cat" href="#planes" data-go="{i}" data-cat="{i}" data-price="{fprice(c)}">
     <div class="card-img img-{IMG[c['name']]}"></div>
     <div class="card-body">
-      <span class="tag">{esc(c['num'])} · {esc(c['kicker'])}</span>
       <h3>{esc(c['name'])}</h3>
       <span class="price">Desde RD$ {fprice(c):,}</span>
-      <p>{esc(c['desc'])}</p>
-      <a class="linkarrow" href="#planes" data-go="{i}">Ver planes <span class="arrow-dot">→</span></a>
     </div>
-  </article>''' for i,c in zip(OTHIDX,OTH))
+  </a>''' for i,c in zip(OTHIDX,OTH))
 cat_opts=''.join(f'<option value="{i}">{esc(c["name"])}</option>' for i,c in zip(OTHIDX,OTH))
 NAVROWS=lambda p: [(('Duración' if r['k']=='Duración' else r['k']), ('1 hora' if r['k']=='Duración' else (({'Villancico':'De 2 a 4 personas','Nochebuena':'De 4 a 6 personas','Gran Navidad':'De 4 a 6 personas'}.get(p['name'],'De 2 a 4 personas')) if r['k']=='Personas' else ('Solo en estudio' if r['k']=='Locación' else ''.join(x['t'] for x in r['parts']))))) for r in p['rows']]
 _nr=NAVROWS
@@ -109,6 +106,10 @@ def plan_cards(cat_name, plans, btn_cls, btn_text, cls='plans'):
 navplans=plan_cards('Navidad',[dict(p,rows=NAVROWS(p),extras=[]) for p in NAV['plans']],'btn-k','Reservar Navidad →','plans xmas-plans')
 casaplans=plan_cards('Navidad en casa',CASA,'btn-k','Reservar en casa →','plans xmas-plans')
 xvplans=plan_cards('XV años',XVPLANS,'btn-y','Reservar este plan →','plans xv-plans')
+XVCAT={'num':'05','kicker':'PAQUETES','name':'XV años','desc':'Vestido, corona, cretona, peinado, maquillaje, accesorios, ramo y sombrilla para tus fotos, en un solo paquete.',
+       'plans':[dict(p,rows=[{'k':k,'parts':[{'t':v}]} for k,v in p['rows']]) for p in XVPLANS]}
+ALL.append(XVCAT); OTH.append(XVCAT); OTHIDX.append(len(ALL)-1)
+IMG['XV años']='xv'
 # navidad slider
 gal=''.join(f'<figure class="slide img-nav{i}"><figcaption>{i:02d} / 10</figcaption></figure>' for i in range(1,11))
 # plan tabs
@@ -148,6 +149,15 @@ pol=[('01','Reserva','La fecha se aparta con un anticipo del 50% del plan. El re
 pol_html=''.join(f'<div class="pol"><span>{a}</span><div><b>{esc(b)}</b><p>{esc(c)}</p></div></div>' for a,b,c in pol)
 css=open('style2.css').read()
 css_imgs=open('imgs.css').read()
+cards=''.join(f'''
+  <a class="card cat" href="#planes" data-go="{i}" data-cat="{i}" data-price="{fprice(c)}">
+    <div class="card-img img-{IMG[c['name']]}"></div>
+    <div class="card-body">
+      <h3>{esc(c['name'])}</h3>
+      <span class="price">Desde RD$ {fprice(c):,}</span>
+    </div>
+  </a>''' for i,c in zip(OTHIDX,OTH))
+cat_opts=''.join(f'<option value="{i}">{esc(c["name"])}</option>' for i,c in zip(OTHIDX,OTH))
 page=f'''<!DOCTYPE html>
 <html lang="es"><head>
 <meta charset="utf-8">
@@ -165,7 +175,6 @@ page=f'''<!DOCTYPE html>
     <a href="#inicio" class="on">Inicio</a>
     <a href="#sesiones">Sesiones</a>
     <a href="#navidad">Navidad</a>
-    <a href="#xv">XV años</a>
     <a href="#planes">Planes</a>
     <a href="#extras">Extras</a>
     <a href="#politicas">Políticas</a>
@@ -189,22 +198,11 @@ page=f'''<!DOCTYPE html>
   
 </section>
 
-<section class="explore">
-  <div class="wrap">
-    <div class="tiles-head">
-      <div><span class="eyebrow">Explora nuestro trabajo</span><span class="yline"></span></div>
-      <a class="linkarrow" href="#sesiones">Ver todas las sesiones <span class="arrow-dot">→</span></a>
-    </div>
-    <div class="tiles">{tiles}</div>
-  </div>
-</section>
+
 
 <section class="about sec-off">
   <div class="wrap">
-    <div class="collage">
-      <div class="c1 img-parejas"></div>
-      <div class="c2 img-graduaciones"></div>
-    </div>
+        </div>
     <div>
       <span class="eyebrow">Sobre nosotros</span><span class="yline"></span>
       <h2>Hola, somos HADES PHOTO STUDIO</h2>
@@ -214,7 +212,6 @@ page=f'''<!DOCTYPE html>
         <div><b>{nplans}</b><span>Planes disponibles</span></div>
         <div><b>10</b><span>Fotos de Navidad</span></div>
       </div>
-      <a class="btn btn-k" href="#reservar">Reservar una sesión →</a>
     </div>
   </div>
 </section>
@@ -245,29 +242,19 @@ page=f'''<!DOCTYPE html>
         <h2>Sesiones de Navidad</h2>
         <p>Solo disponibles durante la temporada navideña. Sesiones en estudio, de 1 hora, para 2 a 6 personas.</p>
       </div>
-      <a class="btn btn-k" href="#reservar">Reservar Navidad →</a>
+      <a class="btn btn-k" href="#navidad-planes">Ver planes de Navidad →</a>
     </div>
+    <p class="swipe-hint">Desliza para ver las 10 fotos →</p>
     <div class="slider">{gal}</div>
+    <div id="navidad-planes">
     {navplans}
     <div class="casa-head"><span class="xmas-tag">Navidad en casa · temporada limitada</span><h3>Nosotros llegamos a tu hogar</h3><p>Hacemos tus fotos navideñas en la casa que tú decoraste. Solo disponibles durante la temporada navideña. Sesiones de 1 hora.</p></div>
     {casaplans}
+    </div>
   </div>
 </section>
 
-<section id="xv" class="xv">
-  <div class="wrap">
-    <div class="xv-top">
-      <div class="xv-photo img-xv" role="img" aria-label="Sesión de XV años"></div>
-      <div class="xv-text">
-        <span class="xmas-tag">Paquetes de XV años</span>
-        <h2>Tu día de XV años</h2>
-        <p>Vestido, corona, cretona, peinado, maquillaje, accesorios, ramo y sombrilla para tus fotos, todo en un solo paquete.</p>
-        <p class="xv-note">Los paquetes incluyen el vestido, la corona y los accesorios para tu sesión.</p>
-      </div>
-    </div>
-    {xvplans}
-  </div>
-</section>
+
 <section id="planes">
   <div class="wrap">
     <div class="sec-title">

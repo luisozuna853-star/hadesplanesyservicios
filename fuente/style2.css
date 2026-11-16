@@ -427,3 +427,101 @@ table.cmp th .reco{display:inline-block;background:var(--y);color:var(--k);font-
   .collage{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}
   .collage .c1,.collage .c2{min-width:0;margin:0!important;transform:none!important}
 }
+/* ===== phone: smaller type so the whole page reads at a glance ===== */
+@media (max-width:640px){
+  html{font-size:13px}
+  body{font-size:13px;line-height:1.45}
+  section{padding-top:40px!important;padding-bottom:40px!important}
+  .xv{padding-top:40px!important;padding-bottom:40px!important}
+  .top nav{display:none}
+  .logo{font-size:15px!important}
+  .tools .btn{font-size:9px!important;padding:7px 10px!important}
+  .hero-in{padding:40px 16px 30px!important}
+  .hero h1{font-size:30px!important;margin:12px 0 14px!important}
+  .hero p.lead{font-size:12.5px!important}
+  .hero .hey{font-size:9.5px!important;letter-spacing:.18em!important}
+  .hero .ctas .btn{font-size:9.5px!important;padding:10px 12px!important}
+  .eyebrow{font-size:9.5px!important}
+  .tiles-head h2,.sec-title h2,.nav-head h2,.xmas-top h2,.xv-text h2,.casa-head h3,.about h2{font-size:22px!important}
+  .xv-text p,.about p,.sec-head p,.sec-title p,.tiles-head p{font-size:12.5px!important}
+  .xv-note{font-size:11px!important}
+  .tile{height:170px!important}
+  .tile b{font-size:10px!important;letter-spacing:.1em!important}
+  .tile small{font-size:8.5px!important}
+  .stats b{font-size:20px!important}
+  .stats span{font-size:8.5px!important}
+  .btn{font-size:9.5px!important;padding:11px 14px!important}
+  .linkarrow{font-size:9.5px!important}
+  .cards .card-body h3{font-size:16px!important}
+  .cards .card-body p{font-size:12px!important;min-height:0}
+  .card-img .tag,.card-body .tag{font-size:8.5px!important;padding:4px 7px!important}
+  .card-body .price{font-size:9px!important;padding:5px 9px!important}
+  .card-body{gap:6px!important}
+  .finder label{font-size:8.5px!important;padding:10px 12px!important}
+  .finder select{font-size:12px!important}
+  .finder .go{font-size:10px!important}
+  .nav-head p{font-size:12px!important}
+  .badge-season{font-size:10px!important;padding:6px 10px!important}
+  .xmas-tag{font-size:9.5px!important;padding:6px 10px!important}
+  .plan{padding:18px 14px 14px!important;gap:9px!important}
+  .plan .tier{font-size:8.5px!important}
+  .pname{font-size:17px!important}
+  .lead{font-size:11.5px!important}
+  .price{font-size:17px!important;padding-bottom:10px!important}
+  .price small{font-size:8px!important}
+  .row{font-size:11px!important;grid-template-columns:86px 1fr!important;gap:6px!important;padding:6px 0!important}
+  .row span{font-size:8px!important}
+  .extras{font-size:11px!important}
+  .reco{font-size:8px!important;padding:4px 8px!important;top:-10px!important}
+  .btn-plan{font-size:9.5px!important;padding:10px!important}
+  .tabs .tab,.tab{font-size:9.5px!important;padding:10px 12px!important}
+  .panel-head h3{font-size:22px!important}
+  .panel-head p{font-size:12px!important}
+  .extra b{font-size:13px!important}
+  .extra span{font-size:11.5px!important}
+  .extra em{font-size:12px!important}
+  .pol>span{font-size:20px!important}
+  .pol b{font-size:10.5px!important}
+  .pol p{font-size:11.5px!important}
+  .band h2{font-size:28px!important}
+  .band p{font-size:12px!important}
+  .reserve{padding:24px 18px!important}
+  .reserve h2{font-size:22px!important}
+  .reserve p{font-size:12px!important}
+  .reserve dl{font-size:11.5px!important}
+  .inc b{font-size:16px!important}
+  .inc p{font-size:12px!important}
+  .xv-cover h2{font-size:28px}
+  footer{padding:28px 18px 20px!important}
+  footer .cols{gap:18px}
+  footer h4{font-size:9.5px!important}
+  footer ul{font-size:11.5px!important}
+  footer .bottom{font-size:10px!important}
+  .slide figcaption{font-size:8.5px!important;padding:4px 7px!important}
+  .slide{width:72vw!important}
+  .xv-text h2{font-size:24px!important}
+}
+.swipe-hint{display:none;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--k);margin:0 0 10px}
+@media (max-width:640px){
+  body{zoom:.82}
+  .swipe-hint{display:block}
+  .slider{margin:0 -18px;padding:0 18px 14px}
+  .slide{width:78vw;height:auto!important;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+  .slide figcaption{font-size:10px}
+}
+@media (max-width:640px){ .slider{margin:0!important;padding:0 18px 14px!important;scroll-padding:0 18px} }
+/* sessions as a compact catalog */
+#cards{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))!important;gap:14px!important}
+.card.cat{cursor:pointer;border-radius:12px}
+.card.cat .card-img{height:230px!important;aspect-ratio:auto!important}
+.card.cat .card-body{padding:12px 14px 14px;gap:6px}
+.card.cat .card-body h3{font-size:17px}
+.card.cat .price{font-size:10px;padding:5px 8px}
+.card.cat:hover{border-color:var(--k)}
+.about .wrap{grid-template-columns:1fr!important}
+.about .wrap>div{max-width:720px}
+@media (max-width:640px){
+  #cards{grid-template-columns:repeat(2,1fr)!important;gap:10px!important}
+  .card.cat .card-img{height:170px!important}
+  .card.cat .card-body h3{font-size:14px}
+}
