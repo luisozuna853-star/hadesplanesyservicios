@@ -7,11 +7,14 @@ OTH=[c for i,c in enumerate(ALL) if i!=3]
 OTHIDX=[i for i in range(len(ALL)) if i!=3]
 def esc(s): return H.escape(str(s),quote=True)
 WA='https://wa.me/18294974585?text='
+BASE_FOTOS='https://hadesplanesyservicios.vercel.app/fotos-planes'
+SLUG={'Newborn':'newborn','Primer año':'primer-ano','Familiar':'familiar','Prebodas':'prebodas','Parejas':'parejas','Individuales':'individuales','Graduaciones':'graduaciones','Ejecutivas':'ejecutivas','XV años':'xv-anos','Navidad':'navidad','Navidad en casa':'navidad-casa'}
 def wa_plan(cat_name, p, rows):
     lines=[f"Hola, quiero reservar el plan {p['name']} ({p['tier'].title()}) de {cat_name}.",
            f"Precio: {p['price']} {p.get('unit','por sesión')}.", "Detalles del plan:"]
     lines+= [f"- {k}: {v}" for k,v in rows]
     if p.get('extras'): lines.append("Incluye: " + ", ".join(p['extras']))
+    lines.append("Miniatura: "+BASE_FOTOS+"/"+SLUG.get(cat_name,'')+".jpg")
     lines.append("¿Me pueden confirmar disponibilidad? Gracias.")
     return WA+quote("\n".join(lines))
 def rows_of(p): return [(r['k'], ''.join(x['t'] for x in r['parts'])) for r in p['rows']]
