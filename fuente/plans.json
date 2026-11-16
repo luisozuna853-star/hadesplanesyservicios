@@ -1,0 +1,2805 @@
+{
+ "cats": [
+  {
+   "name": "Newborn",
+   "num": "01",
+   "kicker": "DE 5 A 15 DÍAS",
+   "anchor": "cat-newborn",
+   "desc": "Una sesión pausada en estudio, a la temperatura y al ritmo del bebé.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Arrullo",
+     "price": "RD$ 7,500",
+     "lead": "Lo esencial, con toda la delicadeza.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "8 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Solo el bebé",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Escenario",
+       "parts": [
+        {
+         "t": "Estudio climatizado",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Sesión en estudio",
+      "1 set con props intercambiables",
+      "Fondos intercambiables"
+     ]
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Nido",
+     "price": "RD$ 11,500",
+     "featured": true,
+     "lead": "El equilibrio entre detalle y familia.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "2 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución + versión web",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "8 fotos impresas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Bebé, padres y hermanos",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Escenario",
+       "parts": [
+        {
+         "t": "Estudio",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería privada + 8 fotos impresas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "4 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Sesión en estudio",
+      "1 set con props intercambiables",
+      "Fondos intercambiables"
+     ]
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Heredad",
+     "price": "RD$ 16,500",
+     "lead": "Una experiencia completa, para conservar por generaciones.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "2 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "20 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución + selección en B/N",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "Todas las fotos + enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Familia directa",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Escenario",
+       "parts": [
+        {
+         "t": "Estudio",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería privada + todas impresas + enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "6 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Sesión en estudio",
+      "1 set con props intercambiables",
+      "Fondos intercambiables"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Primer año",
+   "num": "02",
+   "kicker": "ESTUDIO O EXTERIOR",
+   "anchor": "cat-primer-ano",
+   "desc": "Una sesión para celebrar su primer año, en estudio o al aire libre.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Hito",
+     "price": "RD$ 5,500",
+     "lead": "Lo esencial para recordar su primer año.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "8 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "Sin cambios",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Bebé",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o 1 exterior",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Decoración básica de globos"
+     ]
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Cumpleaños",
+     "price": "RD$ 9,500",
+     "featured": true,
+     "lead": "Su primera celebración, con mamá y papá.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "5 fotos a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Bebé y padres",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "4 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Smash cake",
+      "Arreglo básico de globos",
+      "Número de cumpleaños"
+     ]
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Gran celebración",
+     "price": "RD$ 13,500",
+     "lead": "La experiencia completa de su primer año.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "2 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "20 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "Todas las fotos + enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Familia directa",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "6 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Smash cake",
+      "Decoración elaborada con globos",
+      "Número de cumpleaños"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Familiar",
+   "num": "03",
+   "kicker": "DE 3 A 4 PERSONAS",
+   "anchor": "cat-familiar",
+   "desc": "En estudio o al aire libre, sin poses rígidas: abrazos, miradas y risas reales entre todos.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Retrato",
+     "price": "RD$ 5,500",
+     "lead": "Un recuerdo sencillo de todos juntos.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "8 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "Sin cambios",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "De 3 a 4 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": []
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Raíces",
+     "price": "RD$ 8,500",
+     "featured": true,
+     "lead": "Grupo, parejas y retratos individuales.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "10 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "5 fotos a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "De 3 a 4 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "4 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": []
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Legado",
+     "price": "RD$ 12,500",
+     "lead": "La experiencia familiar más completa.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "Todas las fotos + enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "De 3 a 4 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "6 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": []
+    }
+   ]
+  },
+  {
+   "name": "Navidad",
+   "num": "04",
+   "kicker": "TEMPORADA NAVIDEÑA",
+   "anchor": "cat-navidad",
+   "desc": "Sesiones de temporada con luces, decoración y vestuario navideño, para la familia y las fiestas.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Villancico",
+     "price": "RD$ 6,000",
+     "lead": "Una foto de temporada para tu tarjeta de Navidad.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "8 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Hasta 4 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o 1 exterior",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Decoración navideña básica",
+      "Gorro y accesorios de temporada"
+     ]
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Nochebuena",
+     "price": "RD$ 10,000",
+     "featured": true,
+     "lead": "Luces, familia y el espíritu de la temporada.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución + versión web",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "5 fotos impresas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Hasta 6 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería privada + 5 fotos impresas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "4 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Decoración navideña completa",
+      "1 cambio de vestuario",
+      "Props de temporada"
+     ]
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Gran Navidad",
+     "price": "RD$ 14,500",
+     "lead": "La celebración completa, para guardar por años.",
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "2 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "20 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución + selección en B/N",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "Todas las fotos + enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Familia extendida",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería privada + todas impresas + enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "6 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ],
+     "extras": [
+      "Decoración navideña completa",
+      "2 cambios de vestuario",
+      "Arreglo de globos o luces"
+     ]
+    }
+   ]
+  }
+ ],
+ "retratos": [
+  {
+   "name": "Prebodas",
+   "num": "01",
+   "kicker": "ANTES DEL GRAN DÍA",
+   "anchor": "r-prebodas",
+   "desc": "Retratos elegantes y naturales para el save the date y la boda.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Promesa",
+     "price": "RD$ 8,500",
+     "lead": "Lo esencial para su save the date.",
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "10 fotos impresas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "2 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Solo exterior",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Compromiso",
+     "price": "RD$ 12,500",
+     "lead": "Más looks, más historia.",
+     "featured": true,
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "25 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "Todas las fotos",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "2 cambios de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "2 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "4 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Para siempre",
+     "price": "RD$ 17,500",
+     "lead": "La sesión completa antes de la boda.",
+     "featured": false,
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "2 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "35 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "Todas las fotos + enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "2 cambios de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "2 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "6 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Parejas",
+   "num": "02",
+   "kicker": "CASUAL Y NATURAL",
+   "anchor": "r-parejas",
+   "desc": "Sesiones relajadas para aniversarios, citas o solo porque sí. Sin protocolo de boda: ropa casual y momentos reales.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Juntos",
+     "price": "RD$ 4,500",
+     "lead": "Una salida corta y relajada.",
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "45 minutos",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "6 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "Sin cambios",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "2 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Cómplices",
+     "price": "RD$ 6,500",
+     "lead": "Más tiempo para soltarse.",
+     "featured": true,
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "10 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "2 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "4 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Aniversario",
+     "price": "RD$ 9,500",
+     "lead": "Para celebrar su historia.",
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "Solo enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "2 cambios de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "2 personas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "6 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Individuales",
+   "num": "03",
+   "kicker": "RETRATO PERSONAL",
+   "anchor": "r-individuales",
+   "desc": "Retratos con dirección de poses para ti, tu marca o tus redes.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Esencia",
+     "price": "RD$ 4,500",
+     "lead": "Tu retrato, simple y bien hecho.",
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "8 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "Sin cambios",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "1 persona",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Estilo",
+     "price": "RD$ 6,500",
+     "lead": "Más looks para mostrar quién eres.",
+     "featured": true,
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "1 persona",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "3 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Editorial",
+     "price": "RD$ 9,500",
+     "lead": "Una sesión con aire de revista.",
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "25 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "Solo enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "2 cambios de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "1 persona",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "4 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Graduaciones",
+   "num": "04",
+   "kicker": "CELEBRA TU LOGRO",
+   "anchor": "r-graduaciones",
+   "desc": "Con toga, birrete y quienes te acompañaron en el camino.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Birrete",
+     "price": "RD$ 4,500",
+     "lead": "Lo esencial con toga y birrete.",
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "8 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "Sin cambios",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Graduado/a",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Logro",
+     "price": "RD$ 6,500",
+     "lead": "Con fotos junto a tu familia.",
+     "featured": true,
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "5 fotos a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Graduado/a + familia (hasta 4)",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "4 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Honores",
+     "price": "RD$ 9,500",
+     "lead": "La celebración completa.",
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "25 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "10 fotos + enmarcado 11×14",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "2 cambios de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "Graduado/a + familia (hasta 4)",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Estudio o exterior a elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "6 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Ejecutivas",
+   "num": "05",
+   "kicker": "IMAGEN PROFESIONAL",
+   "anchor": "r-ejecutivas",
+   "desc": "Fotos profesionales para LinkedIn, perfiles y empresas.",
+   "plans": [
+    {
+     "tier": "PLAN BÁSICO",
+     "name": "Perfil",
+     "price": "RD$ 3,500",
+     "lead": "Tu foto profesional, rápida.",
+     "featured": false,
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "30 minutos",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "3 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "Sin cambios",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "1 persona",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Solo estudio",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "1 día desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fondos",
+       "parts": [
+        {
+         "t": "1 fondo",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Uso",
+       "parts": [
+        {
+         "t": "Personal y redes profesionales",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN ESPECIAL",
+     "name": "Liderazgo",
+     "price": "RD$ 5,500",
+     "lead": "Variedad de looks y fondos.",
+     "featured": true,
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1 hora",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "8 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "1 cambio de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "1 persona",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Solo estudio",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "2 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fondos",
+       "parts": [
+        {
+         "t": "2 fondos",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Uso",
+       "parts": [
+        {
+         "t": "Personal y redes profesionales",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tier": "PLAN PREMIUM",
+     "name": "Marca personal",
+     "price": "RD$ 8,500",
+     "lead": "Contenido para toda tu marca.",
+     "featured": false,
+     "extras": [],
+     "rows": [
+      {
+       "k": "Duración",
+       "parts": [
+        {
+         "t": "1.5 horas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fotografías",
+       "parts": [
+        {
+         "t": "15 editadas",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Digitales",
+       "parts": [
+        {
+         "t": "Alta resolución",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Impresas",
+       "parts": [
+        {
+         "t": "No incluye",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Cambios",
+       "parts": [
+        {
+         "t": "2 cambios de vestuario",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Personas",
+       "parts": [
+        {
+         "t": "1 persona",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Locación",
+       "parts": [
+        {
+         "t": "Solo estudio",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Entrega",
+       "parts": [
+        {
+         "t": "Galería online privada",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Tiempo",
+       "parts": [
+        {
+         "t": "3 días desde la elección",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Fondos",
+       "parts": [
+        {
+         "t": "3 fondos",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      },
+      {
+       "k": "Uso",
+       "parts": [
+        {
+         "t": "Comercial: web, prensa y publicidad",
+         "ph": false,
+         "tx": true
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
