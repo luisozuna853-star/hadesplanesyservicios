@@ -369,3 +369,61 @@ table.cmp th .reco{display:inline-block;background:var(--y);color:var(--k);font-
   section{padding-left:18px;padding-right:18px}
   table.cmp th,table.cmp td{padding:12px 12px}
 }
+
+/* ===== mobile fixes: no edge-to-edge text, photos keep their proportions ===== */
+@media (max-width:640px){
+  section,.xv,.about,.explore,.nav-sec,.xmas,.band,.sec-off{padding-left:18px!important;padding-right:18px!important}
+  .wrap{padding:0}
+  .top{padding:10px 16px}
+  .logo{font-size:18px!important}
+  .tools .btn{padding:9px 12px;font-size:10px}
+  .hero-in{padding:56px 18px 40px}
+  .hero h1{font-size:40px}
+  .hero p.lead{font-size:15px}
+  .hero .ctas .btn{font-size:11px;padding:13px 16px}
+  .explore .tiles{gap:8px}
+  .tile{height:220px;padding:12px}
+  .tile b{font-size:12px}
+  .about .wrap{gap:26px}
+  .collage{height:auto!important;display:grid!important;grid-template-columns:1fr 1fr;gap:10px}
+  .collage .c1,.collage .c2{position:static!important;width:100%!important;height:auto!important;border:0!important;aspect-ratio:1400/2489;background-size:cover}
+  .collage .c2{aspect-ratio:1400/2014}
+  .about h2{font-size:30px}
+  .stats{grid-template-columns:1fr 1fr 1fr;gap:12px}
+  .stats b{font-size:26px}
+  .stats span{font-size:10px}
+  .sec-title h2,.tiles-head h2,.xmas-top h2,.nav-head h2,.xv-text h2,.casa-head h3{font-size:30px!important}
+  .sec-title,.tiles-head,.nav-head,.panel-head{gap:12px}
+  .xv{padding-top:48px!important;padding-bottom:48px!important}
+  .xv-text p{font-size:15px}
+  .plan{padding:28px 18px 20px}
+  .pname{font-size:24px}
+  .price{font-size:24px}
+  .cards .card-body{padding:16px}
+  .cards .card-body h3{font-size:20px}
+  .finder label{padding:12px 16px;font-size:10px}
+  .slide{width:80vw;height:auto!important}
+  table.cmp{min-width:0}
+}
+@media (max-width:640px){ .cards .card-img.img-newborn{height:auto!important;aspect-ratio:1600/2400!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-primer{height:auto!important;aspect-ratio:736/1104!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-familiar{height:auto!important;aspect-ratio:1600/2133!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-prebodas{height:auto!important;aspect-ratio:1400/2100!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-parejas{height:auto!important;aspect-ratio:1400/2489!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-individuales{height:auto!important;aspect-ratio:1400/2488!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-graduaciones{height:auto!important;aspect-ratio:1400/2014!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-ejecutivas{height:auto!important;aspect-ratio:1400/2407!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav1{height:auto!important;aspect-ratio:1840/2576!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav2{height:auto!important;aspect-ratio:1717/2576!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav3{height:auto!important;aspect-ratio:1840/2576!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav4{height:auto!important;aspect-ratio:1840/2576!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav5{height:auto!important;aspect-ratio:1840/2576!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav6{height:auto!important;aspect-ratio:2576/1932!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav7{height:auto!important;aspect-ratio:1840/2576!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav8{height:auto!important;aspect-ratio:1840/2576!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav9{height:auto!important;aspect-ratio:1840/2576!important;background-size:cover!important} }
+@media (max-width:640px){ .cards .card-img.img-nav10{height:auto!important;aspect-ratio:1840/2576!important;background-size:cover!important} }
+@media (max-width:640px){
+  .collage{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}
+  .collage .c1,.collage .c2{min-width:0;margin:0!important;transform:none!important}
+}
