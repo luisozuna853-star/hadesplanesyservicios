@@ -234,7 +234,6 @@ page=f'''<!DOCTYPE html>
     <a href="#sesiones">Sesiones</a>
     <a href="#navidad">Navidad</a>
     <a href="#planes">Planes</a>
-    <a href="#galeria-xv">Galería</a>
     <a href="#extras">Extras</a>
     <a href="#politicas">Políticas</a>
   </nav>
@@ -330,7 +329,7 @@ page=f'''<!DOCTYPE html>
   <h2 style="margin-top:14px">Sin prisa, a su ritmo</h2>
   <p>Pausas, conversación y tiempo para que las fotos se vean naturales, sea cual sea la sesión.</p>
 </section>
-{GALERIA}
+
 
 <section id="extras">
   <div class="wrap">
@@ -476,7 +475,7 @@ page=f'''<!DOCTYPE html>
     }}
     var SB={{url:'https://odmtfwynbvhabdzhnbxp.supabase.co',key:'sb_publishable_oW5Yh7VjMkZ7HUUKXTnHtA_SwXVvdIp',bucket:'fotos'}};
     function pub(p){{ return SB.url+'/storage/v1/object/public/'+SB.bucket+'/'+p; }}
-    fetch(SB.url+'/rest/v1/galerias?select=id,titulo,fecha,portada_path,fotos(path,orden)&order=fecha.desc.nullslast',{{headers:{{apikey:SB.key,Authorization:'Bearer '+SB.key}}}})
+    fetch(SB.url+'/rest/v1/galerias?select=id,titulo,fecha,portada_path,fotos(path,orden)&en_portafolio=eq.true&order=fecha.desc.nullslast',{{headers:{{apikey:SB.key,Authorization:'Bearer '+SB.key}}}})
       .then(function(r){{ if(!r.ok) throw 0; return r.json(); }})
       .then(function(rows){{
         var out=[];
