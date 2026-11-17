@@ -2,7 +2,35 @@ import json,re,html as H
 from urllib.parse import quote
 P=json.load(open('/tmp/plans.json'))
 ALL=P['cats']+P['retratos']
+for _c in ALL:
+    if _c['name']=='Prebodas':
+        for _p in _c['plans']:
+            if _p['name']=='Promesa': _p['price']='RD$ 10,000'
+    if _c['name']=='Individuales':
+        for _p in _c['plans']:
+            if _p['name']=='Estilo': _p['price']='RD$ 12,500'
+            if _p['name']=='Editorial': _p['price']='RD$ 8,000'
+            _new=[]
+            for r in _p['rows']:
+                _v=''.join(x['t'] for x in r['parts'])
+                if 'impres' in _v.lower() or r['k']=='Impresas':
+                    if r['k']=='Entrega': _new.append({'k':'Entrega','parts':[{'t':'Galería privada'}]})
+                    continue
+                _new.append(r)
+            _p['rows']=_new
+for _c in ALL:
+    if _c['name']=='Familiar':
+        for _p in _c['plans']:
+            if _p['name']=='Legado': _p['price']='RD$ 9,500'
+for _c in ALL:
+    if _c['name']=='Primer año':
+        for _p in _c['plans']:
+            if _p['name']=='Cumpleaños': _p['price']='RD$ 6,500'
+            if _p['name']=='Gran celebración': _p['price']='RD$ 9,500'
 NAV=ALL[3]
+for _p in NAV['plans']:
+    if _p['name']=='Nochebuena': _p['price']='RD$ 8,000'
+    if _p['name']=='Gran Navidad': _p['price']='RD$ 9,500'
 OTH=[c for i,c in enumerate(ALL) if i!=3]
 OTHIDX=[i for i in range(len(ALL)) if i!=3]
 def esc(s): return H.escape(str(s),quote=True)
@@ -52,9 +80,9 @@ navplans=''.join(f'''<div class="plan{' featured' if p.get('featured') else ''}"
 CASA=[
  {'tier':'PLAN BÁSICO','name':'Chimenea','price':'RD$ 8,000','lead':'Tu casa decorada, con una sesión sencilla y bonita.','featured':False,
   'rows':[('Duración','1 hora'),('Fotografías','10 editadas'),('Digitales','Alta resolución'),('Impresas','No incluye'),('Locación','En tu hogar'),('Entrega','Galería online privada'),('Tiempo','2 días desde la elección'),('Disponibilidad','Solo temporada navideña')]},
- {'tier':'PLAN ESPECIAL','name':'Hogar Iluminado','price':'RD$ 12,500','lead':'Tu hogar navideño como protagonista, con familia incluida.','featured':True,
+ {'tier':'PLAN ESPECIAL','name':'Hogar Iluminado','price':'RD$ 10,000','lead':'Tu hogar navideño como protagonista, con familia incluida.','featured':True,
   'rows':[('Duración','1 hora'),('Fotografías','15 editadas'),('Digitales','Alta resolución + versión web'),('Impresas','5 fotos impresas'),('Locación','En tu hogar'),('Entrega','Galería privada + 5 fotos impresas'),('Tiempo','4 días desde la elección'),('Disponibilidad','Solo temporada navideña')]},
- {'tier':'PLAN PREMIUM','name':'Casa de Navidad','price':'RD$ 17,000','lead':'Toda la casa en tus fotos, para guardarlas por años.','featured':False,
+ {'tier':'PLAN PREMIUM','name':'Casa de Navidad','price':'RD$ 12,000','lead':'Toda la casa en tus fotos, para guardarlas por años.','featured':False,
   'rows':[('Duración','1 hora'),('Fotografías','20 editadas'),('Digitales','Alta resolución + selección en B/N'),('Impresas','Todas las fotos + enmarcado 11×14'),('Locación','En tu hogar'),('Entrega','Galería privada + todas impresas + enmarcado 11×14'),('Tiempo','6 días desde la elección'),('Disponibilidad','Solo temporada navideña')]},
 ]
 casaplans=''.join(f'''<div class="plan{' featured' if p['featured'] else ''}">
@@ -113,6 +141,33 @@ XVCAT={'num':'05','kicker':'PAQUETES','name':'XV años','desc':'Vestido, corona,
        'plans':[dict(p,rows=[{'k':k,'parts':[{'t':v}]} for k,v in p['rows']]) for p in XVPLANS]}
 ALL.append(XVCAT); OTH.append(XVCAT); OTHIDX.append(len(ALL)-1)
 IMG['XV años']='xv'
+
+import json as _json, base64 as _b64
+_GDATA=_json.load(open('galerias.json',encoding='utf-8'))
+def _embed(p):
+    return 'data:image/jpeg;base64,'+_b64.b64encode(open(p,'rb').read()).decode()
+_GEMB={'galerias':[]}
+for _g in _GDATA['galerias']:
+    _cats=[]
+    for _c in _g['categorias']:
+        _cats.append({'id':_c['id'],'nombre':_c['nombre'],'fotos':[_embed(_p) for _p in _c['fotos']]})
+    _GEMB['galerias'].append({'id':_g['id'],'titulo':_g['titulo'],'fecha':_g.get('fecha',''),'portada':_embed(_g['portada']),'categorias':_cats})
+_GEMB_JSON=_json.dumps(_GEMB,ensure_ascii=False).replace('</','<\\/')
+GALERIA="""<section id="galeria-xv" class="galeria-xv">
+  <div class="wrap">
+    <div class="sec-title"><div><h2>Galería</h2></div></div>
+    <div id="galerias-grid" class="galerias-grid"></div>
+  </div>
+</section>
+<script id="galerias-embed" type="application/json">{_GEMB_JSON}</script>
+<div class="gmodal" id="gmodal">
+  <header class="gm-head"><button class="gm-x" id="gm-close" type="button" aria-label="Cerrar">×</button><div class="gm-title"><h3 id="gm-title"></h3><small id="gm-date"></small></div></header>
+  <nav class="gtabs" id="gm-tabs"></nav>
+  <div class="ggrid" id="gm-grid"></div>
+</div>
+<div class="glb" id="glb"><button class="glb-x" id="glb-close" type="button" aria-label="Cerrar">×</button><button class="glb-nav glb-prev" id="glb-prev" type="button" aria-label="Anterior">‹</button><img id="glb-img" alt=""><button class="glb-nav glb-next" id="glb-next" type="button" aria-label="Siguiente">›</button><span class="glb-count" id="glb-count"></span></div>
+"""
+GALERIA=GALERIA.replace('{_GEMB_JSON}',_GEMB_JSON)
 # navidad slider
 gal=''.join(f'<figure class="slide img-nav{i}"><figcaption>{i:02d} / 10</figcaption></figure>' for i in range(1,11))
 # plan tabs
@@ -179,6 +234,7 @@ page=f'''<!DOCTYPE html>
     <a href="#sesiones">Sesiones</a>
     <a href="#navidad">Navidad</a>
     <a href="#planes">Planes</a>
+    <a href="#galeria-xv">Galería</a>
     <a href="#extras">Extras</a>
     <a href="#politicas">Políticas</a>
   </nav>
@@ -274,6 +330,7 @@ page=f'''<!DOCTYPE html>
   <h2 style="margin-top:14px">Sin prisa, a su ritmo</h2>
   <p>Pausas, conversación y tiempo para que las fotos se vean naturales, sea cual sea la sesión.</p>
 </section>
+{GALERIA}
 
 <section id="extras">
   <div class="wrap">
@@ -370,6 +427,83 @@ page=f'''<!DOCTYPE html>
   document.getElementById('fCat').addEventListener('change',apply);
   document.getElementById('fPrice').addEventListener('change',apply);
   document.getElementById('fGo').addEventListener('click',function(){{apply();var t=(document.getElementById('fCat').value==='all')?'sesiones':'planes';document.getElementById(t).scrollIntoView({{behavior:'smooth'}})}});
+
+  // Galleries: read galerias.json, show covers, open a set, browse photos
+  (function(){{
+    var gridEl=document.getElementById('galerias-grid'); if(!gridEl) return;
+    var modal=document.getElementById('gmodal'), tabsEl=document.getElementById('gm-tabs'), gridM=document.getElementById('gm-grid'), titleM=document.getElementById('gm-title'), dateM=document.getElementById('gm-date');
+    var glb=document.getElementById('glb'), glbImg=document.getElementById('glb-img'), glbCount=document.getElementById('glb-count');
+    var shown=[], idx=0;
+    function showAt(i){{ if(!shown.length) return; idx=(i+shown.length)%shown.length; glbImg.src=shown[idx]; glbCount.textContent=(idx+1)+' / '+shown.length; }}
+    function openLb(list,i){{ shown=list; glb.classList.add('on'); showAt(i); }}
+    function closeLb(){{ glb.classList.remove('on'); glbImg.src=''; }}
+    function openSet(g){{
+      titleM.textContent=g.titulo; dateM.textContent=g.fecha||''; tabsEl.innerHTML=''; gridM.innerHTML='';
+      var all=[]; g.categorias.forEach(function(c){{ c.fotos.forEach(function(f){{ all.push({{cat:c.id,src:f}}) }}) }});
+      var current=[];
+      function paint(filter){{
+        gridM.innerHTML=''; current=[];
+        all.forEach(function(p){{ if(filter!=='all'&&p.cat!==filter) return; current.push(p.src); }});
+        current.forEach(function(src,i){{
+          var fig=document.createElement('figure'); fig.className='gfig';
+          var im=document.createElement('img'); im.src=src; im.loading='lazy'; im.alt=g.titulo; im.draggable=false;
+          im.addEventListener('click',function(){{ openLb(current,i); }});
+          fig.appendChild(im); gridM.appendChild(fig);
+        }});
+      }}
+      function tab(label,f){{ var t=document.createElement('button'); t.type='button'; t.className='gtab'+(f==='all'?' on':''); t.textContent=label;
+        t.addEventListener('click',function(){{ tabsEl.querySelectorAll('.gtab').forEach(function(x){{x.classList.remove('on')}}); t.classList.add('on'); paint(f); }});
+        tabsEl.appendChild(t); }}
+      tab('Todas','all');
+      paint('all'); modal.classList.add('on'); document.body.style.overflow='hidden'; modal.scrollTop=0;
+    }}
+    function render(data){{
+      gridEl.innerHTML='';
+      (data.galerias||[]).forEach(function(g){{
+        var n=0; g.categorias.forEach(function(c){{ n+=c.fotos.length }});
+        var card=document.createElement('button'); card.type='button'; card.className='gcard';
+        var box=document.createElement('div'); box.className='gcard-img';
+        var img=document.createElement('img'); img.src=g.portada; img.alt=g.titulo; img.draggable=false; img.loading='lazy';
+        box.appendChild(img);
+        var t=document.createElement('div'); t.className='gcard-t';
+        var bb=document.createElement('b'); bb.textContent=g.titulo;
+        var sm=document.createElement('small'); sm.textContent=(g.fecha?g.fecha+' · ':'')+n+' fotos';
+        t.appendChild(bb); t.appendChild(sm);
+        card.appendChild(box); card.appendChild(t);
+        card.addEventListener('click',function(){{ openSet(g) }});
+        gridEl.appendChild(card);
+      }});
+    }}
+    var SB={{url:'https://odmtfwynbvhabdzhnbxp.supabase.co',key:'sb_publishable_oW5Yh7VjMkZ7HUUKXTnHtA_SwXVvdIp',bucket:'fotos'}};
+    function pub(p){{ return SB.url+'/storage/v1/object/public/'+SB.bucket+'/'+p; }}
+    fetch(SB.url+'/rest/v1/galerias?select=id,titulo,fecha,portada_path,fotos(path,orden)&order=fecha.desc.nullslast',{{headers:{{apikey:SB.key,Authorization:'Bearer '+SB.key}}}})
+      .then(function(r){{ if(!r.ok) throw 0; return r.json(); }})
+      .then(function(rows){{
+        var out=[];
+        rows.forEach(function(g){{
+          var fotos=(g.fotos||[]).slice().sort(function(a,b){{return (a.orden||0)-(b.orden||0)}});
+          if(!fotos.length) return;
+          var portada=g.portada_path?pub(g.portada_path):pub(fotos[0].path);
+          out.push({{id:g.id,titulo:g.titulo,fecha:g.fecha||'',portada:portada,
+            categorias:[{{id:'todas',nombre:'Todas',fotos:fotos.map(function(f){{return pub(f.path)}})}}]}});
+        }});
+        render({{galerias:out}});
+      }})
+      .catch(function(){{
+        render(JSON.parse(document.getElementById('galerias-embed').textContent));
+      }});
+    document.getElementById('gm-close').addEventListener('click',function(){{ modal.classList.remove('on'); document.body.style.overflow=''; }});
+    document.getElementById('glb-close').addEventListener('click',closeLb);
+    document.getElementById('glb-prev').addEventListener('click',function(e){{ e.stopPropagation(); showAt(idx-1); }});
+    document.getElementById('glb-next').addEventListener('click',function(e){{ e.stopPropagation(); showAt(idx+1); }});
+    glb.addEventListener('click',function(e){{ if(e.target===glb) closeLb(); }});
+    document.addEventListener('keydown',function(e){{
+      if(!glb.classList.contains('on')) return;
+      if(e.key==='ArrowLeft') showAt(idx-1); else if(e.key==='ArrowRight') showAt(idx+1); else if(e.key==='Escape') closeLb();
+    }});
+    document.addEventListener('contextmenu',function(e){{ if(e.target.closest&&e.target.closest('.galeria-xv,.gmodal,.glb')) e.preventDefault(); }});
+  }})();
+  document.addEventListener('dragstart',function(e){{ if(e.target.tagName==='IMG'&&e.target.closest('.galeria-xv,.gmodal')) e.preventDefault(); }});
 }})();
 </script>
 </body></html>'''
